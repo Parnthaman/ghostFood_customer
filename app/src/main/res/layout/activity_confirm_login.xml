@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/grayshadow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/ACL_status_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/textsize_large" />
+
+
+            <TextView
+                android:id="@+id/ACL_Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ACL_status_confirm"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/textsize_large" />
+
+            <EditText
+                android:id="@+id/ACL_edt_username"
+                style="@style/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:fontFamily="@font/appfont"
+                android:layout_below="@+id/ACL_Username"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="usertech"
+                android:hint="" />
+
+            <TextView
+                android:id="@+id/ACL_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ACL_edt_username"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/textsize_large" />
+
+            <EditText
+                android:id="@+id/ACL_edt_password"
+                style="@style/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/ACL_Password"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/appfont"
+                android:hint=""
+                android:text="123456"
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ACL_btn_login"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/appfont"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_button_gradient"
+        android:text="Login" />
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/in_toolbar"
+        layout="@layout/toolbar_backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_below="@+id/in_toolbar"
+        android:background="@drawable/grayshadow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ACMN_titleaddress"
+                style="@style/textblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/appfont"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text=""></TextView>
+
+            <LinearLayout
+                android:id="@+id/ACMN_mobile_number_layout"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ACMN_titleaddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <EditText
+                    android:id="@+id/ACMN_mobile_number_code"
+                    style="@style/edittext"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:enabled="false"
+                    android:fontFamily="@font/appfont"
+                    android:text="+965" />
+
+                <EditText
+                    android:id="@+id/ACMN_MobileNumber"
+                    style="@style/edittext"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/appfont"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ACMN_Cancel"
+                style="@style/textblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/appfont"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ACMN_mobile_number_layout"
+                android:layout_marginLeft="@dimen/_70sdp"
+                android:layout_marginRight="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=""></TextView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ACMN_mobilenumberchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_button_gradient"
+        android:text="Save"
+        android:fontFamily="@font/appfont"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

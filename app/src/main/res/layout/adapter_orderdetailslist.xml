@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/card_view1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/iv_camera"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginLeft="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--card_view:cardBackgroundColor="@color/white"-->
+    <!--card_view:cardCornerRadius="4dp"-->
+    <!--card_view:cardUseCompatPadding="true">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/appfont"
+            android:gravity="center|start"
+            android:text="first coupon "
+            android:textColor="@color/textcolor_black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvIngredientsName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/appfont"
+            android:gravity="center|start"
+            android:text="first "
+            android:textColor="@color/gray_edtext"
+            android:textSize="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvQuantityPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/appfont"
+                android:gravity="center|start"
+                android:text="first "
+                android:textColor="@color/gray_edittexts"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/tvItemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/appfont"
+                android:gravity="center|end"
+                android:text="SAR 90.000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/gray_edittexts" />
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="2.5"-->
+        <!--android:gravity="center|end"-->
+        <!--android:textColor="@color/gray_edittexts"-->
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:text="Item name:" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvItemName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:fontFamily="@font/appfont"-->
+        <!--android:gravity="center|start"-->
+        <!--android:text="first coupon "-->
+        <!--android:textColor="@color/textcolor_black"-->
+        <!--android:textSize="@dimen/_12sdp" />-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="2.5"-->
+        <!--android:gravity="center|end"-->
+        <!--android:textColor="@color/gray_edittexts"-->
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:text="Item price:" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvItemPrice"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:fontFamily="@font/appfont"-->
+        <!--android:gravity="center|start"-->
+        <!--android:text="SAR 90.000"-->
+        <!--android:textColor="@color/textcolor_black"-->
+        <!--android:textSize="@dimen/_11sdp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="2.5"-->
+        <!--android:gravity="center|end"-->
+        <!--android:textColor="@color/gray_edittexts"-->
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:text="Quantity:" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvQuantityPrice"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/tvItemName"-->
+        <!--android:layout_weight="1"-->
+        <!--android:fontFamily="@font/appfont"-->
+        <!--android:gravity="center|start"-->
+        <!--android:text="first "-->
+        <!--android:textColor="@color/textcolor_black"-->
+        <!--android:textSize="@dimen/_10sdp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="2.5"-->
+        <!--android:gravity="center|end"-->
+        <!--android:textColor="@color/gray_edittexts"-->
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:text="Ingredients:" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvIngredientsName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/textcolor_black"-->
+        <!--android:layout_weight="1"-->
+        <!--android:fontFamily="@font/appfont"-->
+        <!--android:gravity="center|start"-->
+        <!--android:text="first "-->
+        <!--android:textColor="@color/textcolor_black"-->
+        <!--android:textSize="@dimen/_10sdp" />-->
+
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

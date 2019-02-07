@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_graycolor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvLoginCouponMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/roundeddotted"
+        android:fontFamily="@font/appfont"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="Login to view more coupons."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/roundeddotted"
+        android:fontFamily="@font/appfont"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="No data found"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/gvCoupons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="5dp"
+        android:numColumns="1"
+        android:padding="@dimen/_10sdp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp">
+
+
+    </GridView>
+
+</LinearLayout>

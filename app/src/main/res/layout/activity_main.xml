@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/in_toolbar"
+            layout="@layout/toolbar_activity" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout_custom_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="150dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_card_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edit_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:gravity="center"
+                        android:hint="@string/card_number"
+                        android:inputType="number"
+                        android:fontFamily="@font/appfont"
+                        android:background="@drawable/bg_edt"
+                        android:minEms="8"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:weightSum="3">
+
+                        <EditText
+                            android:id="@+id/edit_cvc"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:hint="@string/cvv"
+                            android:inputType="number"
+                            android:fontFamily="@font/appfont"
+                            android:maxLength="4"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:background="@drawable/bg_edt"
+                            android:minEms="4"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/edit_expiry_month"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:hint="@string/mm"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:background="@drawable/bg_edt"
+                            android:inputType="number"
+                            android:maxEms="3"
+                            android:fontFamily="@font/appfont"
+                            android:maxLength="2"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/edit_expiry_year"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:background="@drawable/bg_edt"
+                            android:hint="@string/yyyy"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:inputType="number"
+                            android:fontFamily="@font/appfont"
+                            android:maxEms="4"
+                            android:maxLength="4"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_card_num"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_perform_transaction"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:textAllCaps="false"
+                        android:visibility="gone"
+                        android:text="Charge card (init from server)" />
+
+                    <Button
+                        android:id="@+id/button_perform_local_transaction"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:fontFamily="@font/appfont"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="Pay" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_transaction_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_custom_form"
+                android:background="#1C3A4B"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textview_reference"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:padding="8dp"
+                    android:fontFamily="@font/appfont"
+                    android:text="@string/no_transaction_yet"
+                    android:textColor="#ffffff" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_token_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_transaction_response"
+                android:background="#1C3A4B"
+                android:gravity="center_vertical"
+                android:minHeight="70dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textview_error"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:padding="8dp"
+                    android:text=" "
+                    android:fontFamily="@font/appfont"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textview_backend_message"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_error"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:padding="8dp"
+                    android:text=" "
+                    android:textColor="#ffffff" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lvAddress"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnOk"
+        style="@style/button"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_home"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:text=""
+        android:fontFamily="@font/appfont"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        android:textColor="@color/textcolor_black" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:padding="@dimen/_4sdp"
+        android:layout_gravity="right"
+        android:tint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_closeyellow"/>
+
+</FrameLayout>

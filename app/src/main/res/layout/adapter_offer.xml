@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_230sdp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_offer_wooden">
+
+        </ImageView>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:letterSpacing="0.3"
+                android:text="Whats Hoy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvHeading"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Chicken Tangy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_19sdp" />
+
+            <TextView
+                android:id="@+id/tvItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvItemName"
+                android:layout_alignStart="@+id/tvItemName"
+                android:layout_below="@+id/tvItemName"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:fontFamily="@font/appfont"
+                android:letterSpacing="0.1"
+                android:text="SAR 15"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/btn_buyNow"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_alignLeft="@+id/tvItemPrice"
+                android:layout_alignStart="@+id/tvItemPrice"
+                android:layout_below="@+id/tvItemPrice"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/appfont"
+                android:background="@drawable/ic_buynow"
+                android:text="" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_ItemImage"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_40sdp"
+                fresco:actualImageScaleType="fitXY" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_OfferImage"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                fresco:actualImageScaleType="fitXY" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

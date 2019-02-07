@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_names">Ghost Food</string>
+    <string name="title_activity_registration_user">RegistrationUser</string>
+    <string name="title_activity_registration_corporate">RegistrationCorporate</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_one_to_many_send">OneToManySend</string>
+
+    <string name="Rs">\u20B9</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="bank_list">
+        <item>sbi,123465,Bank Of Bahrain And Kuwait</item>
+        <item>sbi,123465,Bank Of Baroda</item>
+        <item>sbi,123465,Bank Of Ceylon</item>
+        <item>sbi,123465,Bank Of India</item>
+        <item>sbi,123465,Bank Of Maharashtra</item>
+        <item>sbi,123465,Bank Of Nova Scotia</item>
+        <item>sbi,123465,Bank Of Tokyo-Mitsubishi Ufj Ltd</item>
+        <item>sbi,123465,Barclays Bank Plc</item>
+        <item>sbi,123465,Bassein Catholic Co-Op Bank Ltd</item>
+        <item>sbi,123465,Bharat Co-Op Bank (Mumbai) Ltd</item>
+        <item>sbi,123465,Bharatiya Mahila Bank Ltd.</item>
+
+    </string-array>
+
+    <string name="mapKey">AIzaSyBG9tdyDK67dVqHEPDHDJDQLBaRmU4xYVk</string>
+
+    <!--<string name="facebook_app_id">1517968734905151</string>-->
+
+    <!--
+    Facebook login details
+    email id : customers.onesignal@ontabee.com
+    pass : tech@ontabee
+-->
+
+    <string name="facebook_app_id">216087702447428</string>
+    <string name="fb_login_protocol_scheme">fb1517968734905151</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+
+
+    <string name="card_number">Card number</string>
+    <string name="cvv">CVV</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="create_token">Create token</string>
+    <string name="no_card_yet">No card yet</string>
+    <string name="no_token">No token</string>
+    <string name="token_null_message">Token was null</string>
+    <string name="token_not_gotten">Unable to get token</string>
+    <string name="sample_card">4123450131001381</string>
+    <string name="sample_cvv">883</string>
+    <string name="sample_month">01</string>
+    <string name="sample_year">2020</string>
+    <string name="no_transaction_yet">No transaction yet</string>
+    <string name="amount_in_kobo">Amount in Kobo</string>
+
+</resources>

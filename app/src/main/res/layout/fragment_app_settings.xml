@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_80sdp">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/rdDevelopmentServer"
+            android:text="Development Server"
+            android:textColor="@color/white"
+            android:fontFamily="@font/appfont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rdStagingServer"
+            android:textColor="@color/white"
+            android:fontFamily="@font/appfont"
+            android:text="Staging Server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+        android:id="@+id/rdProductionServer"
+            android:textColor="@color/white"
+            android:text="Production Server"
+            android:fontFamily="@font/appfont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+</FrameLayout>

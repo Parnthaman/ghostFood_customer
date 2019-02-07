@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/in_toolbar"
+        layout="@layout/toolbar_backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/grayshadow"
+        android:layout_below="@+id/in_toolbar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ACE_titleaddress"
+        style="@style/textblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/appfont"
+        android:layout_marginTop="@dimen/_20sdp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/ACE_EmailAddress"
+        style="@style/edittext"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ACE_titleaddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:fontFamily="@font/appfont"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:maxLength="256"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_edittext"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/ACE_Cancel"
+        style="@style/textblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="adfasdf"
+        android:fontFamily="@font/appfont"
+        android:layout_below="@+id/ACE_EmailAddress"
+        android:layout_alignRight="@+id/ACE_EmailAddress"
+        android:layout_alignEnd="@+id/ACE_EmailAddress"></TextView>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/ACE_emailchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Save"
+        android:fontFamily="@font/appfont"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_button_gradient" />
+
+
+
+</LinearLayout>

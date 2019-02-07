@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tlbar_back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_leftarrow"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tlbar_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/toolbar_textcolor"
+            android:textSize="@dimen/toolbar_textsize" />
+
+        <ToggleButton
+            android:id="@+id/tlbar_langswitch_toggle"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/language_toggle_button"
+            android:textOff=""
+            android:textOn="" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/tlbar_langswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/language_switch"
+            android:checked="true"
+            android:textOff="Ar"
+            android:textOn="En"
+            android:thumb="@drawable/language_track"
+            android:visibility="gone"
+            app:track="@null" />
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

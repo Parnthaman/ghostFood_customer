@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gvGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:layout_margin="@dimen/_10sdp"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/txtview_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No data found..."
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/appfont"
+        android:textSize="@dimen/_12sdp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+</FrameLayout>

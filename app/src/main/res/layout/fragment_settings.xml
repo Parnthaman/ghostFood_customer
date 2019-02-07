@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/iv_loginLogo"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:id="@+id/tvChangePassword"
+            style="@style/textblack"
+            android:background="@drawable/roundedbtn"
+            android:textColor="@color/textcolor_black"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/appfont"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="Change Password"
+            android:textSize="@dimen/_13sdp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

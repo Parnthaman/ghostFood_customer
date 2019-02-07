@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/_2sdp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/flImageLayout"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_ItemImage"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_60sdp" />
+
+                <TextView
+                    android:id="@+id/tvYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:text="Yes"
+                    android:fontFamily="@font/appfont"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tvNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="No"
+                    android:fontFamily="@font/appfont"
+                    android:textColor="@color/clr_red"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvModifierName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:gravity="center"
+                android:text="Onion"
+                android:fontFamily="@font/appfont"
+                android:textColor="@color/textcolor_black" />
+
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/swYesNo"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/linearLayout5"
+            android:layout_toRightOf="@+id/linearLayout5"
+            android:fontFamily="@font/appfont"
+            android:background="@drawable/language_toggle_button"
+            android:textOff=""
+            android:textOn="" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

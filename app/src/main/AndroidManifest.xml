@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ghostFood">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Google Pls -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:name=".acitivity.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_names"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".acitivity.Splash"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".acitivity.Registraion"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.Home"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.ChangePassword"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.ForgotPassword"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ff65b24c98988eec69c87fc0bfa70dbed9fc6c5a" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA-yTBbIOhqK8HhAWhyQRyAJasJxjoeNtw" />
+        <!-- android:value="AIzaSyCifVLWaN3HCRHwr9la4lRc8M6RnbSVauE" -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+                <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyAnkXbUVPltYq91rmihHzhILUjTnvmLm9Q" />
+        -->
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" />
+        <!-- <activity -->
+        <!-- android:name="com.facebook.CustomTabActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="sensorPortrait"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+        <!-- &lt;!&ndash;<data android:scheme="@string/fb_login_protocol_scheme" />&ndash;&gt; -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".acitivity.CategoryListing"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.TourActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.AddAddressMap"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.AddAddress"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.PickupLocations"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.ItemDetails"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.ItemListing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.OrderDetails"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.TrackOrderActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".payment.OnlinePayment"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.CouponDetails"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.LoginAct"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.AddressAct"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.Cart"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".acitivity.ChooseAddress"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.CheckOut"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".acitivity.OrderConfirmation"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.PlayToEat"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.TermsAndConditionAct"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.HelpContentActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.OrderStatus"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".acitivity.OtpActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".payment.WebviewOnlinePayment"
+            android:screenOrientation="sensorPortrait" />
+        <activity android:name=".acitivity.ScanQrActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vpTour"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_300sdp"
+                    android:background="@color/yellow1"
+                    android:paddingTop="@dimen/_20sdp" />
+
+                <include
+                    layout="@layout/toolbar_activity" />
+
+
+            </FrameLayout>
+
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/inTourIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:ci_drawable="@drawable/btnroundedmeroun" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/appfont"
+                    android:text="Welcome to Bigman's Pizza"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/tvWelcomeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/appfont"
+                    android:text="Please enter your domain name to continue. Don't have a domain name? Then, Please register with us."
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/_11sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/tvHTTP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="http://"
+                        android:fontFamily="@font/appfont"
+                        android:textColor="@color/textcolor_black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Space
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_1sdp" />
+
+                    <EditText
+                        android:id="@+id/edDomainName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="Domain Name"
+                        android:fontFamily="@font/appfont"
+                        android:textColor="@color/textcolor_black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <Space
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_1sdp" />
+
+                    <TextView
+                        android:id="@+id/tvOnTabee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".CancdianPizza.com"
+                        android:fontFamily="@font/appfont"
+                        android:textColor="@color/textcolor_black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Space
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_1sdp" />
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnProceed"
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/ic_submitarrow"
+                    android:text=""
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

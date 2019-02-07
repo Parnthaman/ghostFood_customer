@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="gone">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeLayout2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/_25sdp">-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_80sdp"-->
+    <!--android:layout_marginBottom="@dimen/_3sdp"-->
+    <!--android:layout_marginLeft="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:layout_marginTop="@dimen/_10sdp">-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginTop="@dimen/_5sdp"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llOfferName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+    <!--android:layout_marginLeft="@dimen/_70sdp"-->
+    <!--android:layout_marginRight="@dimen/_5sdp"-->
+    <!--android:layout_marginStart="@dimen/_70sdp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvOfferName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:fontFamily="@font/appfont"-->
+    <!--android:gravity="center|start"-->
+    <!--android:maxLines="1"-->
+    <!--android:text="Tangy Chicken"-->
+    <!--android:textColor="@color/textcolor_black"-->
+    <!--android:textSize="@dimen/_13sdp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvCouponType"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:fontFamily="@font/appfont"-->
+    <!--android:gravity="center|end"-->
+    <!--android:text="Online"-->
+    <!--android:textColor="@color/green"-->
+    <!--android:textSize="@dimen/_11sdp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llOrder"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/llOfferName"-->
+    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+    <!--android:layout_marginStart="@dimen/_70sdp"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvOfferDescription"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fontFamily="@font/appfont"-->
+    <!--android:gravity="center|start"-->
+    <!--android:text="asdfasdfasdf"-->
+    <!--android:textColor="@color/textcolor_gray"-->
+    <!--android:textSize="@dimen/_11sdp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvDate"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fontFamily="@font/appfont"-->
+    <!--android:text="14/02/2019"-->
+    <!--android:textColor="@color/textcolor_gray"-->
+    <!--android:textSize="@dimen/_11sdp"-->
+    <!--android:visibility="gone" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="@dimen/_80sdp"-->
+    <!--android:layout_height="@dimen/_100sdp"-->
+    <!--android:layout_marginStart="@dimen/_10sdp"-->
+    <!--android:layout_marginTop="@dimen/_5sdp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_ItemImage"-->
+    <!--android:layout_width="@dimen/_70sdp"-->
+    <!--android:layout_height="@dimen/_70sdp"-->
+    <!--android:layout_below="@+id/tvAmount"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="@dimen/_10sdp"-->
+    <!--android:layout_marginTop="@dimen/_5sdp"-->
+    <!--android:background="@drawable/ic_categorybg"-->
+    <!--android:padding="@dimen/_15sdp"-->
+    <!--android:scaleType="fitXY" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvAmount"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+    <!--android:layout_marginTop="@dimen/_75sdp"-->
+    <!--android:fontFamily="@font/appfont"-->
+    <!--android:gravity="center"-->
+    <!--android:text="SAR 100"-->
+    <!--android:textSize="@dimen/_12sdp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvItemValue"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/llOrder"-->
+    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+    <!--android:layout_marginStart="@dimen/_100sdp"-->
+    <!--android:text="219EGP"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="@dimen/_12sdp" />-->
+
+    <!--</FrameLayout>-->
+    <!--</RelativeLayout>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@+id/llCouponDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlCouponDetail"
+            android:layout_width="match_parent"
+            android:background="@color/gray_dialog"
+            android:layout_height="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/tvOfferName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/appfont"
+                android:gravity="center|start"
+                android:padding="@dimen/_5sdp"
+                android:text="Coupon Name"
+                android:textColor="@color/textcolor_black"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/tvCouponType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tvOfferName"
+                android:gravity="center|start"
+                android:padding="@dimen/_5sdp"
+                android:text="Online"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_11sdp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd ="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_down_arrow_black"
+                    android:tint="@color/textcolor_black" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvOfferDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/appfont"
+                android:padding="@dimen/_5sdp"
+                android:text="Description"
+                android:textColor="@color/gray_edtext" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_minus1sdp"
+                android:background="@color/gray_dialog"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alphabet_background_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:fontFamily="@font/appfont"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Offer Price:50"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tvCopyCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/appfont"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Copy to clipboard"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

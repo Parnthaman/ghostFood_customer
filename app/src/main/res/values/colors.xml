@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e9de0f</color>
+    <color name="colorPrimaryDark">#e9de0f</color>
+    <color name="colorAccent">#e9de0f</color>
+
+
+    <color name="btn_endcolor">#38B5AA</color>
+    <color name="btn_startcolor">#1B1B19</color>
+    <color name="toolbar_textcolor">#38B5AA</color>
+    <color name="white">#ffffff</color>
+    <color name="textcolor_black">#000000</color>
+    <color name="textcolor_gray">#5A5A5A</color>
+    <color name="gray_edtext">#333333</color>
+    <color name="lightgray">#E4E4E4</color>
+    <color name="gray_dialog">#D8D8D8</color>
+    <color name="gray_edittexts">#c4c1c1</color>
+
+    <color name="green">#008000</color>
+    <color name="liteverygrey">#f8f8f8</color>
+    <color name="text_gray">#7f7f7f</color>
+    <color name="clr_blue">#1f81d6</color>
+    <color name="clr_red">#ff0000</color>
+    <color name="clr_green">#80FF00</color>
+    <color name="tabindicator">#ffffff</color>
+    <color name="header_gray">#f8f8f8</color>
+
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_orange_light">#ff71d56e</color>
+
+    <!-- Index Listview Colors - start -->
+    <color name="primary_color">#1B1B19</color>
+    <color name="primary_color_dark">#1B1B19</color>
+    <color name="accent_color">#FF4081</color>
+    <color name="alphabet_text_color">#9E9E9E</color>
+    <color name="alphabet_text_selected_color">#3F51B5</color>
+    <color name="alphabet_background_color">#F5F5F5</color>
+    <color name="alphabet_background_selected_color">#9E9E9E</color>
+    <color name="alphabet_background_border_color">#9E9E9E</color>
+    <color name="yellow">#b20838</color>
+    <color name="darkyellow">#9b012d</color>
+    <color name="coupongray">#302f2b</color>
+    <color name="updatedialoggray">#585858</color>
+    <color name="btncoupon">#F6A524</color>
+    <color name="btnplaytoeat">#D80606</color>
+    <color name="btnlocations">#F00101</color>
+    <color name="appbgcolor">#e9de0f</color>
+    <color name="appbackground">#F0F0F0</color>
+    <color name="transappbgcolor">#80e9de0f</color>
+    <color name="transappbgcolors">#BA6925</color>
+    <color name="tabbackground">#e9de0f</color>
+    <color name="bg">#fd8880</color>
+    <color name="bgnew">#f9ebea</color>
+    <color name="yellow1">#FCDB4C</color>
+    <color name="bg_color">#f8f4e0</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#02006D</color>
+
+    <color name="facebook">#3b5998</color>
+    <color name="light_gray">#9E9E9E</color>
+    <color name="gmailplus">#d34836</color>
+    <color name="bg_graycolor">#F0F0F0</color>
+    <color name="ordercompletion">#91c554</color>
+
+    <!-- Index Listview Colors - end -->
+
+</resources>

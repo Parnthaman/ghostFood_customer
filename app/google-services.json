@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "365718512784",
+    "firebase_url": "https://ghostfood-4f877.firebaseio.com",
+    "project_id": "ghostfood-4f877",
+    "storage_bucket": "ghostfood-4f877.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365718512784:android:63ff87e46a4127ed",
+        "android_client_info": {
+          "package_name": "com.ghostFood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365718512784-5bjm8aihtu6s91a629g0sg32uvgrlrgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCibk2tj8tWq80xuNue3WGOw_iiMcg4_0c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
